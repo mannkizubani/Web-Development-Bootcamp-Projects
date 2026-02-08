@@ -1,58 +1,228 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Manu Mathur Content Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home - DigitalHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">DigitalHub</a>
+      <nav class="main-nav" id="mainNav">
+        <a class="active" href="index.html">Home</a>
+        <a href="consultation.html">Consultation</a>
+        <a href="podcast.html">Podcasts</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-    <h1> My HTML Portfolio: A Snapshot</h1>
+  <main>
+    <section class="hero hero-main">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Digital Marketing Expert &amp; Creative Blogger</h1>
+          <p>Helping brands thrive in the digital landscape through strategic marketing, compelling content, and data-driven insights.</p>
+          <div class="hero-cta">
+            <a class="btn" href="consultation.html">Get Started</a>
+            <a class="btn btn-outline" href="blog.html">Read Blog</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p> Check out my dummy HTML portfolio created as a part of the Web Development Bootcamp Course.</p>
+    <section class="section about">
+      <div class="container narrow">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-underline"></div>
+        <p>I'm a passionate digital marketer and blogger with over 10 years of experience helping businesses grow their online presence. From SEO to content creation, I specialize in creating strategies that deliver real results.</p>
+      </div>
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <h3>10+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-card">
+          <h3>200+</h3>
+          <p>Clients Served</p>
+        </div>
+        <div class="stat-card">
+          <h3>500+</h3>
+          <p>Blog Posts</p>
+        </div>
+        <div class="stat-card">
+          <h3>50+</h3>
+          <p>Podcast Episodes</p>
+        </div>
+      </div>
+    </section>
 
-<hr>
+    <section class="section services">
+      <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <div class="section-underline"></div>
+        <div class="grid cards-4">
+          <article class="card service-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 16l5-5 4 4 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 20h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>Boost your search rankings with proven SEO strategies and techniques.</p>
+          </article>
+          <article class="card service-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 2v4M12 18v4M2 12h4M18 12h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Content Strategy</h3>
+            <p>Engaging content that resonates with your audience and drives results.</p>
+          </article>
+          <article class="card service-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 20h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 20V9l5-3 5 3v11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="7" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Brand Growth</h3>
+            <p>Scale your brand with data-driven marketing campaigns.</p>
+          </article>
+          <article class="card service-card">
+            <div class="icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="8" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="16" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M3 20c0-3 2.5-5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M21 20c0-3-2.5-5-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Community Building</h3>
+            <p>Build and nurture engaged communities around your brand.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<h2> My Top 3 Movies</h2>
-<img src="./assets/images/movie-ranking.png" height = "200px" alt = "Movie Ranking Image" >
+    <section class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-underline"></div>
+        <div class="grid cards-3">
+          <article class="card testimonial-card">
+            <div class="quote-icon">&quot;</div>
+            <p>Working with this digital marketing expert transformed our online presence. Our organic traffic increased by 300% in just 6 months!</p>
+            <div class="testimonial-user">
+              <div class="avatar grad-blue"></div>
+              <div>
+                <strong>Sarah Johnson</strong>
+                <span>CEO, TechStart Inc.</span>
+              </div>
+            </div>
+          </article>
+          <article class="card testimonial-card">
+            <div class="quote-icon">&quot;</div>
+            <p>The content strategy delivered exceptional results. Our engagement rates doubled and we finally built a loyal community around our brand.</p>
+            <div class="testimonial-user">
+              <div class="avatar grad-green"></div>
+              <div>
+                <strong>Michael Chen</strong>
+                <span>Founder, EcomHub</span>
+              </div>
+            </div>
+          </article>
+          <article class="card testimonial-card">
+            <div class="quote-icon">&quot;</div>
+            <p>Absolutely brilliant! The SEO insights and strategies provided were game-changing. We're now ranking #1 for our top keywords.</p>
+            <div class="testimonial-user">
+              <div class="avatar grad-pink"></div>
+              <div>
+                <strong>Emily Rodriguez</strong>
+                <span>Marketing Director, GrowthLabs</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<a href="./public/movie-ranking.html"> My Top 3 Favorite Movies </a>
-    <ul>
-        <li> Fighter</li>
-        <li> Yodha</li>
-        <li> Top Gun Maverick</li>
-    </ul>
+    <section class="section cta-gradient">
+      <div class="container narrow">
+        <h2>Ready to Grow Your Digital Presence?</h2>
+        <p>Let's work together to create a winning digital marketing strategy.</p>
+        <a class="btn btn-light" href="consultation.html">Book a Consultation</a>
+      </div>
+    </section>
 
-<hr>
+    <section class="section connect">
+      <div class="container narrow">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>Whether you're looking for digital marketing advice, content creation services, or just want to chat about the latest industry trends, I'd love to hear from you.</p>
+        <div class="hero-cta">
+          <a class="btn" href="consultation.html">Schedule Consultation</a>
+          <a class="btn btn-muted" href="blog.html">Read My Blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<h2> Birthday Invite</h2>
-    <img src="./assets/images/birthday-invite.png" height = "200px" alt = "Birthday Invite Image" >
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo">DigitalHub</div>
+        <p>Your partner in digital marketing excellence. We help brands grow through strategic content, SEO, and innovative marketing solutions.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="consultation.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect With Us</h4>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 8h3V5h-3c-2.2 0-4 1.8-4 4v3H8v3h3v6h3v-6h3l1-3h-4V9c0-.6.4-1 1-1z" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 7.4c.9-.6 1.4-1.4 1.6-2.4-.8.5-1.7.9-2.7 1.1-.8-.8-1.9-1.3-3.1-1.3-2.3 0-4.1 1.8-4.1 4.1 0 .3 0 .7.1 1C8 9.8 5.4 8.5 3.7 6.4c-.4.6-.6 1.3-.6 2.1 0 1.4.7 2.7 1.8 3.4-.6 0-1.2-.2-1.8-.5v.1c0 2 1.4 3.6 3.2 4-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 1.7 2.2 2.9 4.1 2.9-1.5 1.1-3.3 1.8-5.3 1.8H2c2 1.2 4.4 2 6.9 2 8.2 0 12.7-6.8 12.7-12.7v-.6c.9-.6 1.5-1.3 2-2.1-.8.4-1.5.7-2.3.9z" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm-1 6h3v12H3V9zm7 0h3v2c.4-1 1.7-2.2 3.7-2.2 3 0 4.3 2 4.3 5.1V21h-3v-5.3c0-1.5-.6-2.6-2.1-2.6-1.1 0-1.8.7-2.1 1.4-.1.3-.1.7-.1 1V21h-3V9z" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10 2H7a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-5 3.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm0 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5.2-.8a.8.8 0 1 1 0 1.6.8.8 0 0 1 0-1.6z" fill="currentColor"/></svg>
+          </a>
+        </div>
+        <div class="footer-email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <span>hello@digitalhub.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">(c) 2026 DigitalHub. All rights reserved.</div>
+  </footer>
 
-    <a href="./public/birthday-invite.html"> Here's My Birthday Invite </a>
-    <p> My Birtday is on:</p>
-    <p> <b> February 14 (Valentine's Day) </b></p>
-
-<hr>
-
-<a href="./public/about.html"> Get to Know Me Better </a><br>
-<a href="./public/contact.html"> Book Your Free Consultation Here</a>
-
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
